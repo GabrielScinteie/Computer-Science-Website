@@ -1,0 +1,77 @@
+<p style="font-size: 25px; margin: 20px; font-weight: bold; margin-left: 30px;"> Introdu informațiile:</p>
+<form id="inregistrare" style="margin: 20px;">
+    <fieldset>
+        <b>
+            <p> Informații generale:</p>
+        </b>
+        <label> Nume utilizator </label>
+        <br>
+        <input type="text" id = "numeUtilizator">
+        <br>
+        <label> Parola </label>
+        <br>
+        <input type="text" id = "parola">
+        <br>
+        <label> Nume </label>
+        <br>
+        <input type="text">
+        <br>
+        <label> Prenume </label>
+        <br>
+        <input type="text">
+        <br>
+        <label> Email </label>
+        <br>
+        <input type="email">
+        <br>
+        <label> Telefon </label>
+        <br>
+        <input type="tel">
+        <br>
+    </fieldset>
+    <br>
+    <fieldset>
+        <b>
+            <p> Informații personale: </p>
+        </b>
+        Sex:
+        <select>
+            <option value="M"> M </option>
+            <option value="F"> F </option>
+        </select>
+        <br>
+
+        Sistemul de operare preferat:
+        <input list="OS">
+        <datalist id="OS">
+            <option value="Windows">Windows</option>
+            <option value="MacOS">MacOS</option>
+            <option value="Linux">Linux</option>
+        </datalist>
+
+        <br>
+        <label> Alege culoarea prefereta:</label>
+        <input type="color">
+
+        <br>
+        <label> Data nașterii</label>
+        <input type="date">
+
+        <br>
+        <label> Ora nașterii</label>
+        <input type="time">
+
+        <br>
+        <label> Vârstă</label>
+        <input type="range" min="10" max="100">
+
+
+        <br>
+        <label> Descriere </label>
+        <br>
+        <textarea type="text" rows="5" cols="20"> </textarea>
+
+    </fieldset>
+    <br>
+    <button type="button" onclick="inregistreaza()"> Înregistrează-te</button>
+</form>

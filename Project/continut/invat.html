@@ -1,0 +1,101 @@
+
+
+<div id="invatMain">
+    <aside id="meniu">
+        <a href="#section1"> Secțiunea 1 </a>
+        <a href="#section2"> Secțiunea 2 </a>
+        <a href="#section3"> Secțiunea 3 </a>
+    </aside>
+
+    <aside id="content">
+        <section id="section1">
+            <p> <b> Secțiunea 1 </b></p>
+            <p id="dataMea"></p>
+            <p id="versiune"></p>
+            <p id="locatie"></p>
+
+        </section>
+
+        <hr>
+
+        <section id="section2">
+            <p> <b> Secțiunea 2 </b> <br>
+                <label for="contur"> Culoare contur:</label>
+                <input id="contur" name="contur" type="color"> <br>
+                <label for="umplere"> Culoare umplere:</label>
+                <input id="umplere" name="umplere" type="color"> <br>
+            </p>
+            <canvas id="desen" onclick="d(event)" width="400" height="200" style="border:1px solid;">
+
+            </canvas>
+        </section>
+        <hr>
+        <section id="section3"> <b>Secțiunea 3</b></section>
+        <table id="myTable">
+            <tr>
+                <td> Număr decimal </td>
+                <td> Reprezentare binară </td>
+            </tr>
+            <tr>
+                <td> 0 </td>
+                <td> 0000 </td>
+            </tr>
+            <tr>
+                <td> 1 </td>
+                <td> 0001 </td>
+            </tr>
+            <tr>
+                <td> 2 </td>
+                <td> 0010 </td>
+            </tr>
+            <tr>
+                <td> 3 </td>
+                <td> 0011 </td>
+            </tr>
+            <tr>
+                <td> 4 </td>
+                <td> 0100 </td>
+            </tr>
+            <tr>
+                <td> 5 </td>
+                <td> 0101 </td>
+            </tr>
+            <tr>
+                <td> 6 </td>
+                <td> 0110 </td>
+            </tr>
+            <tr>
+                <td> 7 </td>
+                <td> 0111 </td>
+            </tr>
+            <tr>
+                <td> 8 </td>
+                <td> 1000 </td>
+            </tr>
+            <tr>
+                <td> 9 </td>
+                <td> 1001 </td>
+            </tr>
+            <tr>
+                <td> 10 </td>
+                <td> 1010 </td>
+            </tr>
+        </table>
+        <form class="addForm" action="#myTable" onsubmit="return false;">
+            <label> Introdu linia: </label>
+            <input id="adaugaLinie" type="text">
+            <input type="submit" value="Trimite" onclick="addRow()"> <br>
+
+            <label> Introdu coloana: </label>
+            <input id="adaugaColoana" type="text">
+            <input type="submit" value="Trimite" onclick="appendColumn()">
+
+            <label> Introdu culoarea randului:</label>
+            <input id="adaugaCuloare" type="color">
+
+        </form>
+    </aside>
+    <script>
+        f()
+    </script>
+</div>

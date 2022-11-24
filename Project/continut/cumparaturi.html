@@ -1,0 +1,26 @@
+<p style = "font-size: 25px; margin: 10px; margin-left: 25px; font-weight:bold;"> Adauga în coș </p>
+<form>
+    <fieldset>
+        Nume: <br>
+        <input type ="text" id = "nume"> <br>
+        Cantitate: <br>
+        <input type = "text" id = "cantitate"> <br>
+        <input type = "button" value = "Adaugă" onclick="add()">
+    </fieldset> 
+</form>
+
+<p> Produsele din lista de cumpărături sunt: </p>
+
+<table id = 'tabelProduse' style = "color:green;">
+    <tr>
+        <th> Număr </th>
+        <th> Nume Produs</th>
+        <th> Cantitate </th>
+    </tr>
+</table>
+
+<p> Alege modul de salvare dorit </p>
+<input type = "radio" id = "LocalStorage" name = "storage" value = "Local Storage">
+<label> Local storage</label> <br>
+<input type = "radio" id = "indexDB" name = "storage" value = "IndexedDB">
+<label> IndexDB</label> <br>
